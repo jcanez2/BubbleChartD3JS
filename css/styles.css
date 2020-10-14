@@ -1,0 +1,50 @@
+#wrapper {
+  margin:auto;
+  width:1440px;
+}
+input {
+  width:50px;
+}
+/*
+svg {
+  border:1px solid gray;
+  border-radius:10px;
+  height:600px;
+  width:200px;
+  margin:5px;
+}
+*/
+#linechart {
+  width:1080px;
+  height: 920px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: red;
+  opacity: 1;
+  margin: 10px;
+}
+
+graphContainer{
+  width: fit-content;
+  height: fit-content;
+  background-color: blue;
+}
+
+.sourceLink{
+  width: 50%;
+  margin-left: 200px;
+}
+
+
+html {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.countrymap {
+  stroke: black;
+}
+
+
+h2, h3 {
+  text-align:center;
+}

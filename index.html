@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>CSE 494 - Fall 20201 - Homework #3</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='scripts/homework3.js'></script>
+    <style>
+      .gradientAxis line, .gradientAxis path { stroke: #fff; }
+      </style>
+
+  </head>
+  <body>
+    <div id='wrapper'>
+      <h2>Homework #4: Fancy GapFinder with Animation</h2>
+      <h3>Jesus Canez - jcanez2@asu.edu - 1207313779</h3>
+      <hr style='width:100%'>
+      <h1>GDP per Capita in Africa (1960-2011)</h1>
+      
+      &nbsp;Region&nbsp;
+      <select id='region-select'>
+        <option value='interpolateRdYlGn'>Red Yellow Green</option>
+        <option value='interpolateViridis'>Vivid</option>
+        <option value='interpolateBrBG'>Brown and Tan</option>
+        <option value='interpolateYlGn'>Greens</option>
+        <option value='interpolatePiYG'>Pink and Green</option>
+        <option value='interpolateTurbo'>Turbo</option>
+      </select>
+      
+      &nbsp;Year:&nbsp;
+      <input id='year-input' type='number' value='2000'/>
+      
+      &nbsp;
+      &nbsp;Y Axis&nbsp;
+      <select id='y-axis-select'>
+        <option value='interpolateRdYlGn'>Red Yellow Green</option>
+        <option value='interpolateViridis'>Vivid</option>
+        <option value='interpolateBrBG'>Brown and Tan</option>
+        <option value='interpolateYlGn'>Greens</option>
+        <option value='interpolatePiYG'>Pink and Green</option>
+        <option value='interpolateTurbo'>Turbo</option>
+      </select>
+
+      &nbsp;X Axis&nbsp;
+      <select id='x-axis-select'>
+        <option value='interpolateRdYlGn'>Red Yellow Green</option>
+        <option value='interpolateViridis'>Vivid</option>
+        <option value='interpolateBrBG'>Brown and Tan</option>
+        <option value='interpolateYlGn'>Greens</option>
+        <option value='interpolatePiYG'>Pink and Green</option>
+        <option value='interpolateTurbo'>Turbo</option>
+      </select>
+
+      &nbsp;Test Country&nbsp;
+      <select id='testCountry'>
+        <option value='United States'>United States</option>
+        <option value='United Kingdom'>United Kingdom</option>
+        <option value='Sudan'>Sudan</option>
+        <option value='Mexico'>Mexico</option>
+        <option value='Norway'>Norway</option>
+        <option value='Yemen'>Yemen</option>
+      </select>
+
+
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <svg id='map'></svg>
+      <svg id='linechart'></svg>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p class="sourceLink">Source:</p>
+      <a class='sourceLink' href='https://databank.worldbank.org/source/africa-development-indicators' target='_blank'>The World Bank</a>
+    </div>
+  </body>
+</html>
